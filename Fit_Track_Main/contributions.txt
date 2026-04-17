@@ -1,11 +1,21 @@
-Arshia Shahbazpourtazehkand 100832558
-[
+Arshia Shahbazpourtazehkand:
 --------------------------------------
 - Built the backend server and database layer (server.js, database.js) including session handling, JSON-based storage schema, and route registration.
 - Implemented the authentication system (routes/auth.js) covering registration, login, logout, and profile update with bcrypt password hashing.
-- Developed the workout backend (routes/workouts.js) including plan creation, exercise storage, session recording, and per-set feel rating persistence.]
+- Developed the workout backend (routes/workouts.js) including plan creation, exercise storage, session recording, and per-set feel rating persistence.
+- Built the workout frontend component (components/workout.js) including the active workout mode overlay, set/rest timer, feel rating UI, progress tracking, and session saving.
+- Wrote the API service layer (api.js) connecting all frontend components to the backend via fetch.
+
+Samad Khan:
+---------------------
+- Built the nutrition backend and frontend (routes/nutrition.js, components/nutrition.js) covering food logging, macro tracking, water logging, date navigation, food name autofill, and the macro donut SVG chart.
+- Developed the analytics backend (routes/analytics.js) and frontend (components/analytics.js) including the calorie bar chart, stacked macro chart, weight trend line, and workout frequency chart using D3.js.
+- Built the body tracking module (routes/body.js, components/body.js) including weight logging and the weight history chart.
+- Implemented the dashboard (components/dashboard.js) aggregating today's macros, water intake, last recorded weight, and weekly workout count.
+- Built the profile component (components/profile.js), the app shell (app.js) including routing and theme switching, and wrote the full CSS design system (style.css).
 
 Lillian Weir:
+---------------------
 [Contributions:
 
 Added "To-Do" section and "Goals" section
@@ -14,6 +24,7 @@ Added minor additions to seed data into the new sections
 ]
 
 Wei Cui:
+---------------------
 [I contributed mainly through testing, security review, feature improvement, and documentation.
 
 - Tested registration and login using both the demo account and a separate test account.
@@ -23,3 +34,12 @@ Wei Cui:
 - Fixed vulnerabilities in workouts.js, nutrition.js, and body.js by improving ownership checks, delete handling, and validation.
 - Added a custom per-exercise workout timer feature in both frontend and backend, replacing the previous fixed 45-second active timer while keeping backward compatibility for older plans.
 - Retested the app after changes to confirm that normal app functions still work and unauthorized delete attempts are now blocked.]
+
+Henry Peng
+---------------------
+- Built the achievements and leaderboard frontend with dynamic badge unlocking and community rankings.
+- Implemented a dedicated backend route in server.js to fetch full-database metrics for the gamification system.
+- Integrated the new module into the Vue app shell, updating the router and sidebar navigation.
+- Styled the interactive badge UI, adding animations and fully supporting the dark/light mode theme.
+- Created a normalized mock dataset to validate complex macro tracking, streaks, and leaderboard accuracy.
+
