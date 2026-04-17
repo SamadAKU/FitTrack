@@ -1,3 +1,10 @@
+Lillian Weir:
+[Contributions:
+
+Added "To-Do" section and "Goals" section
+Added minor color additions to support the new sections
+Added minor additions to seed data into the new sections
+]
 
 Wei Cui:
 [I contributed mainly through testing, security review, feature improvement, and documentation.
