@@ -29,17 +29,26 @@
       "created_at": "2026-04-14T20:38:08.568Z"
     },
     {
+<<<<<<< Updated upstream
       "id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
       "username": "example",
       "email": "example@example.com",
       "password": "$2a$10$9R.Xqvr01rCaXW6WQeDZ9uhJV3QmFsVEbaoPvjNmsHJygx7aEAXWO",
       "display_name": "example",
+=======
+      "id": "8db02b40-087e-4765-90ea-e0150b916d09",
+      "username": "HENRY",
+      "email": "xinyu.peng@ontariotechu.net",
+      "password": "$2a$10$gPJ5CzT3DgfZ3xrMtnkQoOfT5.aYI1o67HAZn8fQM.87mig7Ob0Cq",
+      "display_name": "HENRY",
+>>>>>>> Stashed changes
       "height_cm": null,
       "goal_calories": 2000,
       "goal_protein": 150,
       "goal_carbs": 250,
       "goal_fat": 65,
       "goal_water_ml": 2500,
+<<<<<<< Updated upstream
       "created_at": "2026-04-17T11:30:28.109Z"
     },
     {
@@ -55,6 +64,9 @@
       "goal_fat": 65,
       "goal_water_ml": 2500,
       "created_at": "2026-04-17T17:23:41.154Z"
+=======
+      "created_at": "2026-04-17T18:42:46.499Z"
+>>>>>>> Stashed changes
     }
   ],
   "food_logs": [
