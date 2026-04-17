@@ -1,3 +1,10 @@
+Arshia Shahbazpourtazehkand 100832558
+[
+--------------------------------------
+- Built the backend server and database layer (server.js, database.js) including session handling, JSON-based storage schema, and route registration.
+- Implemented the authentication system (routes/auth.js) covering registration, login, logout, and profile update with bcrypt password hashing.
+- Developed the workout backend (routes/workouts.js) including plan creation, exercise storage, session recording, and per-set feel rating persistence.]
+
 Lillian Weir:
 [Contributions:
 
