@@ -27,6 +27,34 @@
       "goal_fat": 65,
       "goal_water_ml": 2500,
       "created_at": "2026-04-14T20:38:08.568Z"
+    },
+    {
+      "id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "username": "example",
+      "email": "example@example.com",
+      "password": "$2a$10$9R.Xqvr01rCaXW6WQeDZ9uhJV3QmFsVEbaoPvjNmsHJygx7aEAXWO",
+      "display_name": "example",
+      "height_cm": null,
+      "goal_calories": 2000,
+      "goal_protein": 150,
+      "goal_carbs": 250,
+      "goal_fat": 65,
+      "goal_water_ml": 2500,
+      "created_at": "2026-04-17T11:30:28.109Z"
+    },
+    {
+      "id": "fd836070-6061-4a9b-a031-06236bccf82c",
+      "username": "example2",
+      "email": "example2@example.com",
+      "password": "$2a$10$7i5Y8BW.0c/dVnfqDz1rOOzRVghQm6eVxjn3kVUFErwuB7aUtLUNa",
+      "display_name": "example2",
+      "height_cm": null,
+      "goal_calories": 2000,
+      "goal_protein": 150,
+      "goal_carbs": 250,
+      "goal_fat": 65,
+      "goal_water_ml": 2500,
+      "created_at": "2026-04-17T17:23:41.154Z"
     }
   ],
   "food_logs": [
@@ -406,6 +434,97 @@
       "meal_type": "breakfast",
       "logged_at": "2026-04-15",
       "created_at": "2026-04-15T04:30:42.561Z"
+    },
+    {
+      "id": "e3f53c3d-e263-4f3b-a31d-e2e3a2ef82b5",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "food_name": "test ' \" <b>bold</b> & ??",
+      "calories": 290,
+      "protein_g": 45,
+      "carbs_g": 0,
+      "fat_g": 11,
+      "serving_size": "",
+      "meal_type": "breakfast",
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T12:17:37.262Z"
+    },
+    {
+      "id": "7024813c-1d3d-4425-8887-a8b48295f4cd",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "food_name": "-4",
+      "calories": 299,
+      "protein_g": 0,
+      "carbs_g": 55,
+      "fat_g": 0,
+      "serving_size": "",
+      "meal_type": "breakfast",
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T12:20:47.604Z"
+    },
+    {
+      "id": "d8f0268b-e87c-40c0-b8f1-9d4687abbdc2",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "food_name": "chicken",
+      "calories": 55,
+      "protein_g": 4,
+      "carbs_g": 11,
+      "fat_g": 1,
+      "serving_size": "",
+      "meal_type": "breakfast",
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T15:58:26.584Z"
+    },
+    {
+      "id": "65d293e8-14cd-4ecf-8357-65bc16e20b89",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "food_name": "water",
+      "calories": 10,
+      "protein_g": 0,
+      "carbs_g": 1,
+      "fat_g": 0,
+      "serving_size": "",
+      "meal_type": "breakfast",
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T16:03:22.808Z"
+    },
+    {
+      "id": "fc789d6f-7fdf-4976-ad95-1a6be9568a19",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "food_name": "cb",
+      "calories": 55,
+      "protein_g": 4,
+      "carbs_g": 11,
+      "fat_g": 1,
+      "serving_size": "",
+      "meal_type": "breakfast",
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T17:16:25.395Z"
+    },
+    {
+      "id": "64316078-51d4-4d9d-bf4a-684d0b501833",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "food_name": "bbb",
+      "calories": 290,
+      "protein_g": 1,
+      "carbs_g": 0,
+      "fat_g": 1,
+      "serving_size": "",
+      "meal_type": "breakfast",
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T17:18:40.955Z"
+    },
+    {
+      "id": "4872171f-5284-4b4d-95e0-d96056c029f2",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "food_name": "sample entry",
+      "calories": 299,
+      "protein_g": 11,
+      "carbs_g": 55,
+      "fat_g": 11,
+      "serving_size": "",
+      "meal_type": "breakfast",
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T17:21:48.197Z"
     }
   ],
   "water_logs": [
@@ -457,6 +576,55 @@
       "amount_ml": 2203,
       "logged_at": "2026-04-14",
       "created_at": "2026-04-14T20:37:58.516Z"
+    },
+    {
+      "id": "b7942e0f-c51a-42e4-97e6-39142c8eac75",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "amount_ml": 250,
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T16:00:08.014Z"
+    },
+    {
+      "id": "73339862-9ad8-4ea1-bb89-252003df0d60",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "amount_ml": 11,
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T16:01:10.633Z"
+    },
+    {
+      "id": "7cf5b570-4a25-43d4-af08-70ef4c42c219",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "amount_ml": 300,
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T16:04:32.058Z"
+    },
+    {
+      "id": "d9f47384-f01a-4c4a-82e7-dd5ad25ef1e8",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "amount_ml": 500,
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T16:04:50.969Z"
+    },
+    {
+      "id": "4bf03fcb-d8a0-4d67-b980-f7db9a6d7e37",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "amount_ml": 500,
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T16:04:51.973Z"
+    },
+    {
+      "id": "aa830cad-b7be-4d69-8491-ba02524c1217",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "amount_ml": 1,
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T16:04:56.322Z"
+    },
+    {
+      "id": "e5f62937-1871-4deb-9c76-b410ddc5ea0b",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "amount_ml": 1,
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T17:16:43.163Z"
     }
   ],
   "weight_logs": [
@@ -515,6 +683,22 @@
       "notes": "",
       "logged_at": "2026-04-14",
       "created_at": "2026-04-14T20:37:58.516Z"
+    },
+    {
+      "id": "3cd896dd-c796-4dc2-8e90-63b140e3c09f",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "weight_kg": 88,
+      "notes": "",
+      "logged_at": "2026-04-17",
+      "created_at": "2026-04-17T16:05:21.939Z"
+    },
+    {
+      "id": "1c345189-0a39-4ac6-b402-ca02f1d5a144",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "weight_kg": 80,
+      "notes": "",
+      "logged_at": "2026-04-08",
+      "created_at": "2026-04-17T16:06:10.017Z"
     }
   ],
   "workout_plans": [
@@ -545,6 +729,48 @@
       "name": "aaa",
       "description": "",
       "created_at": "2026-04-15T04:29:59.782Z"
+    },
+    {
+      "id": "019c0b26-8929-4c0b-92c0-c24b71260d27",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "name": "aa",
+      "description": "aaa",
+      "created_at": "2026-04-17T11:31:15.196Z"
+    },
+    {
+      "id": "a8b63e72-76e0-451b-9dbe-3e1ebd7ed905",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "name": "push up 23232",
+      "description": "I amd pushing up",
+      "created_at": "2026-04-17T11:40:07.642Z"
+    },
+    {
+      "id": "c7522c96-740f-424e-a1f0-64c622069115",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "name": "testhijack",
+      "description": "hijacking",
+      "created_at": "2026-04-17T15:20:52.676Z"
+    },
+    {
+      "id": "5dd7b211-cdf4-49cb-b78c-c5a10eb5cfbe",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "name": "testhijack2",
+      "description": "testhijack2",
+      "created_at": "2026-04-17T15:31:01.290Z"
+    },
+    {
+      "id": "0eb20a89-2f2e-4dea-be78-dade254c4048",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "name": "moretime",
+      "description": "why only 45s set",
+      "created_at": "2026-04-17T16:07:35.255Z"
+    },
+    {
+      "id": "33c6616f-8c0a-48c7-95b1-98bcfc0021e8",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "name": "pushups",
+      "description": "long push up",
+      "created_at": "2026-04-17T16:59:47.727Z"
     }
   ],
   "exercises": [
@@ -635,6 +861,40 @@
       "weight_kg": 1,
       "notes": "",
       "order_index": 0
+    },
+    {
+      "id": "9ac67e8a-4cb9-4cbb-a31c-4b1e476447dd",
+      "plan_id": "5dd7b211-cdf4-49cb-b78c-c5a10eb5cfbe",
+      "name": "testhijack2",
+      "sets": 3,
+      "reps": 10,
+      "rest_seconds": 60,
+      "weight_kg": 11,
+      "notes": "",
+      "order_index": 0
+    },
+    {
+      "id": "c261ef40-bd11-429b-9cce-64a623ba5f55",
+      "plan_id": "0eb20a89-2f2e-4dea-be78-dade254c4048",
+      "name": "timecheck",
+      "sets": 3,
+      "reps": 10,
+      "rest_seconds": 22,
+      "weight_kg": 1,
+      "notes": "",
+      "order_index": 0
+    },
+    {
+      "id": "a0fe9403-639d-4227-8e87-4b14f720f582",
+      "plan_id": "33c6616f-8c0a-48c7-95b1-98bcfc0021e8",
+      "name": "bigpush",
+      "sets": 2,
+      "reps": 45,
+      "work_seconds": 100,
+      "rest_seconds": 60,
+      "weight_kg": 70,
+      "notes": "",
+      "order_index": 0
     }
   ],
   "workout_sessions": [
@@ -700,6 +960,105 @@
       "duration_seconds": 3,
       "notes": "",
       "completed_at": "2026-04-15T04:30:06.640Z"
+    },
+    {
+      "id": "79aca194-9f12-47b2-a729-416be7b55f24",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "plan_id": "019c0b26-8929-4c0b-92c0-c24b71260d27",
+      "plan_name": "aa",
+      "duration_seconds": 12,
+      "notes": "",
+      "completed_at": "2026-04-17T11:31:29.863Z"
+    },
+    {
+      "id": "1697e3d0-79bb-4f15-b10d-bf85f31c8530",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "plan_id": "019c0b26-8929-4c0b-92c0-c24b71260d27",
+      "plan_name": "aa",
+      "duration_seconds": 10,
+      "notes": "",
+      "completed_at": "2026-04-17T11:35:59.066Z"
+    },
+    {
+      "id": "8cd7cf98-40f9-48e9-8549-d100df5c3cb4",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "plan_id": "a8b63e72-76e0-451b-9dbe-3e1ebd7ed905",
+      "plan_name": "push up 23232",
+      "duration_seconds": 11,
+      "notes": "",
+      "completed_at": "2026-04-17T11:40:26.023Z"
+    },
+    {
+      "id": "2d36a9eb-791b-4f5f-a0b7-98e27e6d5ba8",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "plan_id": "a8b63e72-76e0-451b-9dbe-3e1ebd7ed905",
+      "plan_name": "push up 23232",
+      "duration_seconds": 11,
+      "notes": "",
+      "completed_at": "2026-04-17T11:40:40.387Z"
+    },
+    {
+      "id": "58c29437-931a-42fd-ab3b-353bf7ea88cb",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "plan_name": "Knight's Training",
+      "duration_seconds": 12,
+      "notes": "",
+      "completed_at": "2026-04-17T11:50:03.728Z"
+    },
+    {
+      "id": "b9ebbc65-8b71-48bc-b4c7-939fcfa42411",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "plan_name": "Knight's Training",
+      "duration_seconds": 43,
+      "notes": "",
+      "completed_at": "2026-04-17T11:50:50.082Z"
+    },
+    {
+      "id": "4ed83f35-1963-4f25-8d27-fd85e11209ab",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "plan_id": "019c0b26-8929-4c0b-92c0-c24b71260d27",
+      "plan_name": "aa",
+      "duration_seconds": 2,
+      "notes": "",
+      "completed_at": "2026-04-17T12:57:52.303Z"
+    },
+    {
+      "id": "9c17dffd-d7a9-4276-b0ad-a0aca181a705",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "plan_id": "c7522c96-740f-424e-a1f0-64c622069115",
+      "plan_name": "testhijack",
+      "duration_seconds": 10,
+      "notes": "",
+      "completed_at": "2026-04-17T15:21:05.762Z"
+    },
+    {
+      "id": "01ca4707-23c9-49d1-a761-28b8dff470ab",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "plan_id": "0eb20a89-2f2e-4dea-be78-dade254c4048",
+      "plan_name": "moretime",
+      "duration_seconds": 13,
+      "notes": "",
+      "completed_at": "2026-04-17T16:07:52.515Z"
+    },
+    {
+      "id": "a97b3749-0215-4852-8330-f8db198b4153",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "plan_id": "0eb20a89-2f2e-4dea-be78-dade254c4048",
+      "plan_name": "moretime",
+      "duration_seconds": 3,
+      "notes": "",
+      "completed_at": "2026-04-17T16:11:38.432Z"
+    },
+    {
+      "id": "8c2c65d9-2235-4b2b-92a1-9deba626a8bd",
+      "user_id": "c7785384-a25c-4042-927c-7f4a55f1aa01",
+      "plan_id": "33c6616f-8c0a-48c7-95b1-98bcfc0021e8",
+      "plan_name": "pushups",
+      "duration_seconds": 83,
+      "notes": "",
+      "completed_at": "2026-04-17T17:01:15.106Z"
     }
   ],
   "session_sets": [
@@ -765,6 +1124,183 @@
       "reps_completed": 10,
       "weight_kg": 1,
       "feel_rating": null
+    },
+    {
+      "id": "4e18e902-db3a-49c8-b69a-7ea4dba7654d",
+      "session_id": "79aca194-9f12-47b2-a729-416be7b55f24",
+      "exercise_name": "bench press",
+      "set_number": 1,
+      "reps_completed": 10,
+      "weight_kg": 33,
+      "feel_rating": 5
+    },
+    {
+      "id": "ced70eef-afc1-4b48-8297-5f10c8c125f5",
+      "session_id": "1697e3d0-79bb-4f15-b10d-bf85f31c8530",
+      "exercise_name": "bench press",
+      "set_number": 1,
+      "reps_completed": 10,
+      "weight_kg": 33,
+      "feel_rating": 4
+    },
+    {
+      "id": "5f676734-66d9-4e61-a951-e0dd85c4867a",
+      "session_id": "8cd7cf98-40f9-48e9-8549-d100df5c3cb4",
+      "exercise_name": "diovor",
+      "set_number": 1,
+      "reps_completed": 10,
+      "weight_kg": 55,
+      "feel_rating": 4
+    },
+    {
+      "id": "ba5df62a-fc71-436a-915f-b51a0c555406",
+      "session_id": "2d36a9eb-791b-4f5f-a0b7-98e27e6d5ba8",
+      "exercise_name": "diovor",
+      "set_number": 1,
+      "reps_completed": 10,
+      "weight_kg": 55,
+      "feel_rating": 3
+    },
+    {
+      "id": "7cc18b30-3c52-4534-b59f-3853fdcd1ec1",
+      "session_id": "58c29437-931a-42fd-ab3b-353bf7ea88cb",
+      "exercise_name": "Sword Press (Bench)",
+      "set_number": 1,
+      "reps_completed": 8,
+      "weight_kg": 80,
+      "feel_rating": 5
+    },
+    {
+      "id": "0f10196a-579c-487a-a6e8-3eb3ba5ff2bc",
+      "session_id": "b9ebbc65-8b71-48bc-b4c7-939fcfa42411",
+      "exercise_name": "Sword Press (Bench)",
+      "set_number": 1,
+      "reps_completed": 8,
+      "weight_kg": 80,
+      "feel_rating": null
+    },
+    {
+      "id": "79c38c67-5927-462e-a2b5-9210a9a439d9",
+      "session_id": "b9ebbc65-8b71-48bc-b4c7-939fcfa42411",
+      "exercise_name": "Sword Press (Bench)",
+      "set_number": 2,
+      "reps_completed": 8,
+      "weight_kg": 80,
+      "feel_rating": null
+    },
+    {
+      "id": "ef72e4dd-963a-403e-8390-5c7dd58a2dda",
+      "session_id": "b9ebbc65-8b71-48bc-b4c7-939fcfa42411",
+      "exercise_name": "Sword Press (Bench)",
+      "set_number": 3,
+      "reps_completed": 8,
+      "weight_kg": 80,
+      "feel_rating": null
+    },
+    {
+      "id": "b4945a6f-2710-4383-8e75-13d2b773bbca",
+      "session_id": "b9ebbc65-8b71-48bc-b4c7-939fcfa42411",
+      "exercise_name": "Sword Press (Bench)",
+      "set_number": 4,
+      "reps_completed": 8,
+      "weight_kg": 80,
+      "feel_rating": null
+    },
+    {
+      "id": "167aaf05-df10-41b1-bd3d-abe999005b54",
+      "session_id": "b9ebbc65-8b71-48bc-b4c7-939fcfa42411",
+      "exercise_name": "Shield Raise (OHP)",
+      "set_number": 1,
+      "reps_completed": 10,
+      "weight_kg": 50,
+      "feel_rating": null
+    },
+    {
+      "id": "c90c625f-43d4-46ae-b55c-37a881c20062",
+      "session_id": "b9ebbc65-8b71-48bc-b4c7-939fcfa42411",
+      "exercise_name": "Shield Raise (OHP)",
+      "set_number": 2,
+      "reps_completed": 10,
+      "weight_kg": 50,
+      "feel_rating": null
+    },
+    {
+      "id": "8af50c22-ea1c-4168-bd9d-157f95bdf657",
+      "session_id": "4ed83f35-1963-4f25-8d27-fd85e11209ab",
+      "set_number": 1,
+      "feel_rating": null
+    },
+    {
+      "id": "40897741-8729-48ce-b498-7e75c15aefeb",
+      "session_id": "9c17dffd-d7a9-4276-b0ad-a0aca181a705",
+      "exercise_name": "hijacking",
+      "set_number": 1,
+      "reps_completed": 10,
+      "weight_kg": 11,
+      "feel_rating": 5
+    },
+    {
+      "id": "d78b5116-8043-4152-a19a-83d9bf68e434",
+      "session_id": "9c17dffd-d7a9-4276-b0ad-a0aca181a705",
+      "exercise_name": "hijacking",
+      "set_number": 2,
+      "reps_completed": 10,
+      "weight_kg": 11,
+      "feel_rating": null
+    },
+    {
+      "id": "0aa6d1ce-bb63-4cf3-b820-ebae1b27e49f",
+      "session_id": "01ca4707-23c9-49d1-a761-28b8dff470ab",
+      "exercise_name": "timecheck",
+      "set_number": 1,
+      "reps_completed": 10,
+      "weight_kg": 1,
+      "feel_rating": null
+    },
+    {
+      "id": "efc29970-f8f2-4691-a814-39d3a28428cd",
+      "session_id": "01ca4707-23c9-49d1-a761-28b8dff470ab",
+      "exercise_name": "timecheck",
+      "set_number": 2,
+      "reps_completed": 10,
+      "weight_kg": 1,
+      "feel_rating": null
+    },
+    {
+      "id": "38aba3e8-f2be-45a7-a204-827d151e03a8",
+      "session_id": "01ca4707-23c9-49d1-a761-28b8dff470ab",
+      "exercise_name": "timecheck",
+      "set_number": 3,
+      "reps_completed": 10,
+      "weight_kg": 1,
+      "feel_rating": null
+    },
+    {
+      "id": "dbfc0a9e-c13f-4088-a762-f700099f499a",
+      "session_id": "a97b3749-0215-4852-8330-f8db198b4153",
+      "exercise_name": "timecheck",
+      "set_number": 1,
+      "reps_completed": 10,
+      "weight_kg": 1,
+      "feel_rating": null
+    },
+    {
+      "id": "74f0f9f5-2696-4a08-92ae-1862a26e8520",
+      "session_id": "8c2c65d9-2235-4b2b-92a1-9deba626a8bd",
+      "exercise_name": "bigpush",
+      "set_number": 1,
+      "reps_completed": 45,
+      "weight_kg": 70,
+      "feel_rating": 5
+    },
+    {
+      "id": "a18af3b0-a9dd-4159-b654-325f7d3f4f14",
+      "session_id": "8c2c65d9-2235-4b2b-92a1-9deba626a8bd",
+      "exercise_name": "bigpush",
+      "set_number": 2,
+      "reps_completed": 45,
+      "weight_kg": 70,
+      "feel_rating": 5
     }
   ]
 }

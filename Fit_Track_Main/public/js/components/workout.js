@@ -55,10 +55,11 @@ const WorkoutView = {
           <div style="margin:12px 0;">
             <div class="card-title">Exercises</div>
             <div v-for="(ex,i) in newPlan.exercises" :key="i" style="background:var(--color-bg-input);border-radius:8px;padding:12px;margin-bottom:8px;">
-              <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr auto;gap:8px;align-items:end;">
+              <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr auto;gap:8px;align-items:end;">
                 <div class="field" style="margin:0"><label class="label" style="font-size:10px;">Exercise</label><input class="input" style="padding:6px 8px;" v-model="ex.name" placeholder="Bench Press"/></div>
                 <div class="field" style="margin:0"><label class="label" style="font-size:10px;">Sets</label><input class="input" style="padding:6px 8px;" type="number" v-model.number="ex.sets"/></div>
                 <div class="field" style="margin:0"><label class="label" style="font-size:10px;">Reps</label><input class="input" style="padding:6px 8px;" type="number" v-model.number="ex.reps"/></div>
+                <div class="field" style="margin:0"><label class="label" style="font-size:10px;">Time(s)</label><input class="input" style="padding:6px 8px;" type="number" v-model.number="ex.work_seconds"/></div>
                 <div class="field" style="margin:0"><label class="label" style="font-size:10px;">Rest(s)</label><input class="input" style="padding:6px 8px;" type="number" v-model.number="ex.rest_seconds"/></div>
                 <div class="field" style="margin:0"><label class="label" style="font-size:10px;">Kg</label><input class="input" style="padding:6px 8px;" type="number" v-model.number="ex.weight_kg"/></div>
                 <button @click="newPlan.exercises.splice(i,1)" class="btn-danger" style="align-self:flex-end;"><i class="fas fa-times"></i></button>
@@ -83,7 +84,7 @@ const WorkoutView = {
             <div class="exercise-list" style="margin-top:12px;">
               <div v-for="ex in plan.exercises" :key="ex.id" class="exercise-item">
                 <span class="ex-name">{{ ex.name }}</span>
-                <span class="ex-detail">{{ ex.sets }}×{{ ex.reps }} @ {{ ex.weight_kg||'—' }}kg · {{ ex.rest_seconds }}s</span>
+                <span class="ex-detail">{{ ex.sets }}×{{ ex.reps }} @ {{ ex.weight_kg||'—' }}kg · work {{ ex.work_seconds || 45 }}s / rest {{ ex.rest_seconds }}s</span>
               </div>
             </div>
           </div>
@@ -151,7 +152,7 @@ const WorkoutView = {
     const newPlan = ref({
       name: '',
       description: '',
-      exercises: [{ name: '', sets: 3, reps: 10, rest_seconds: 60, weight_kg: null }]
+      exercises: [{ name: '', sets: 3, reps: 10, work_seconds: 45, rest_seconds: 60, weight_kg: null }]
     });
 
     // Workout mode state
@@ -211,7 +212,9 @@ const WorkoutView = {
     // Timer
     function startTimer() {
       clearInterval(timer);
-      timerVal.value = isResting.value ? (currentExercise.value.rest_seconds || 60) : 45;
+      timerVal.value = isResting.value
+  ? (currentExercise.value.rest_seconds || 60)
+  : (currentExercise.value.work_seconds || 45);
       timer = setInterval(() => {
         timerVal.value--;
         if (timerVal.value <= 0) {
@@ -251,7 +254,7 @@ const WorkoutView = {
       workoutDone.value = false;
       elapsedSeconds.value = 0;
       recordedSets.value = [];
-      timerVal.value = 45;
+      timerVal.value = activePlan.value?.exercises?.[0]?.work_seconds || 45;
       workoutMode.value = true;
       startTimer();
       elapsedTimer = setInterval(() => elapsedSeconds.value++, 1000);
@@ -303,7 +306,7 @@ const WorkoutView = {
 
     // Plan management
     function addExRow() {
-      newPlan.value.exercises.push({ name: '', sets: 3, reps: 10, rest_seconds: 60, weight_kg: null });
+      newPlan.value.exercises.push({ name: '', sets: 3, reps: 10, work_seconds: 45, rest_seconds: 60, weight_kg: null });
     }
 
     async function createPlan() {
@@ -311,7 +314,7 @@ const WorkoutView = {
         const p = await API.createPlan(newPlan.value);
         plans.value.unshift(p);
         showCreatePlan.value = false;
-        newPlan.value = { name: '', description: '', exercises: [{ name: '', sets: 3, reps: 10, rest_seconds: 60, weight_kg: null }] };
+        newPlan.value = { name: '', description: '', exercises: [{ name: '', sets: 3, reps: 10, work_seconds: 45, rest_seconds: 60, weight_kg: null }] };
         showToast('Plan created!');
       } catch {
         showToast('Error', 'error');

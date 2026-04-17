@@ -25,7 +25,7 @@ router.post('/plans', auth, (req, res) => {
   db.get('workout_plans').push(plan).write();
   const exs = (exercises || []).map((ex, i) => ({
     id: uuidv4(), plan_id: planId, name: ex.name,
-    sets: ex.sets || 3, reps: ex.reps || 10, rest_seconds: ex.rest_seconds || 60,
+    sets: ex.sets || 3, reps: ex.reps || 10, work_seconds: ex.work_seconds || 45, rest_seconds: ex.rest_seconds || 60,
     weight_kg: ex.weight_kg || null, notes: ex.notes || '', order_index: i
   }));
   exs.forEach(ex => db.get('exercises').push(ex).write());
@@ -33,9 +33,28 @@ router.post('/plans', auth, (req, res) => {
 });
 
 router.delete('/plans/:id', auth, (req, res) => {
+	/*
   db.get('workout_plans').remove({ id: req.params.id, user_id: req.session.userId }).write();
   db.get('exercises').remove({ plan_id: req.params.id }).write();
   res.json({ success: true });
+  */
+  //////////////////////
+  const plan= db.get('workout_plans').find({ id: req.params.id, user_id: req.session.userId }).value();
+  //change access vulnerablitiy, verify u own the plan
+  if(!plan){//else stops
+	  return res.status(404).json({error: 'plan not found'})
+	  
+  }
+  db.get('exercises')
+    .remove({ plan_id: plan.id })
+    .write();
+
+  db.get('workout_plans')
+    .remove({ id: plan.id, user_id: req.session.userId })
+    .write();
+return res.json({success:true});
+
+  
 });
 
 router.get('/sessions', auth, (req, res) => {

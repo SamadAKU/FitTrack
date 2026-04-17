@@ -1,0 +1,243 @@
+ Account A my example account
+ un: example@example.com
+ pw: example
+ 
+ id: "a8b63e72-76e0-451b-9dbe-3e1ebd7ed905", user_id: "c7785384-a25c-4042-927c-7f4a55f1aa01", name: "push up 23232"
+ id: "019c0b26-8929-4c0b-92c0-c24b71260d27", user_id: "c7785384-a25c-4042-927c-7f4a55f1aa01", name: "aa"
+ 
+ account B demo account
+ un: demo@fittrack.com
+ pw: demo123
+
+ Then use: 
+ //////////////////////////////////////
+ ~~~
+ fetch('/api/workouts/plans/PASTE_ACCOUNT_A_PLAN_ID_HERE', {
+  method: 'DELETE',
+  credentials: 'same-origin'
+}).then(r => r.json()).then(console.log)
+~~~
+///////////////////////////////////////////////
+account B, the demo account
+attempt to delete 
+
+account example's
+fetch('/api/workouts/plans/a8b63e72-76e0-451b-9dbe-3e1ebd7ed905', {
+  method: 'DELETE',
+  credentials: 'same-origin'
+})
+  .then(async r => ({ status: r.status, text: await r.text() }))
+  .then(console.log)
+/////////////////////////////////////// 
+  target:
+  
+  {
+      "id": "656bf14d-8dd8-436f-a26a-8371b6f51416",
+      "plan_id": "a8b63e72-76e0-451b-9dbe-3e1ebd7ed905",
+      "name": "diovor",
+      "sets": 3,
+      "reps": 10,
+      "rest_seconds": 60,
+      "weight_kg": 55,
+      "notes": "",
+      "order_index": 0
+    }
+/////////////////////////////////////////////////
+Before:
+  "exercises": [
+    {
+      "id": "7bd5002c-9a07-4886-8757-883513a80ba3",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "name": "Sword Press (Bench)",
+      "sets": 4,
+      "reps": 8,
+      "rest_seconds": 90,
+      "weight_kg": 80,
+      "notes": "",
+      "order_index": 0
+    },
+    {
+      "id": "8b26f6e0-9c80-4069-9a0c-76c825949d4d",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "name": "Shield Raise (OHP)",
+      "sets": 3,
+      "reps": 10,
+      "rest_seconds": 75,
+      "weight_kg": 50,
+      "notes": "",
+      "order_index": 1
+    },
+    {
+      "id": "3c5e949a-cd5c-49ad-8237-c60ec2428b61",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "name": "Castle Row",
+      "sets": 3,
+      "reps": 12,
+      "rest_seconds": 60,
+      "weight_kg": 60,
+      "notes": "",
+      "order_index": 2
+    },
+    {
+      "id": "be3a887b-e37f-4696-923d-89ee86337502",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "name": "Dragon Squat",
+      "sets": 4,
+      "reps": 10,
+      "rest_seconds": 90,
+      "weight_kg": 100,
+      "notes": "",
+      "order_index": 3
+    },
+    {
+      "id": "84baf0e5-5eff-4e09-8935-71c3d834c454",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "name": "Siege Pull-up",
+      "sets": 3,
+      "reps": 8,
+      "rest_seconds": 60,
+      "weight_kg": 0,
+      "notes": "",
+      "order_index": 4
+    },
+    {
+      "id": "022dc95c-55e7-4331-b60a-5207f2133dcf",
+      "plan_id": "dcf9d497-d748-49b6-a5cf-39977d6d58e5",
+      "name": "aa",
+      "sets": 3,
+      "reps": 10,
+      "rest_seconds": 60,
+      "weight_kg": null,
+      "notes": "",
+      "order_index": 0
+    },
+    {
+      "id": "9a625d71-64eb-470d-a5f3-d23acfaecd00",
+      "plan_id": "e3711327-7ea8-42ec-ace5-f6557c04196e",
+      "name": "psus",
+      "sets": 3,
+      "reps": 10,
+      "rest_seconds": 60,
+      "weight_kg": 1,
+      "notes": "",
+      "order_index": 0
+    },
+    {
+      "id": "155e4465-e121-45e4-9396-416f35cb5988",
+      "plan_id": "56c9a5dd-be22-410e-a438-f40413f78316",
+      "name": "BENCH",
+      "sets": 1,
+      "reps": 10,
+      "rest_seconds": 60,
+      "weight_kg": 1,
+      "notes": "",
+      "order_index": 0
+    }
+	{
+      "id": "656bf14d-8dd8-436f-a26a-8371b6f51416",
+      "plan_id": "a8b63e72-76e0-451b-9dbe-3e1ebd7ed905",
+      "name": "diovor",
+      "sets": 3,
+      "reps": 10,
+      "rest_seconds": 60,
+      "weight_kg": 55,
+      "notes": "",
+      "order_index": 0
+    }
+  ],
+  
+  After:
+  
+    "exercises": [
+    {
+      "id": "7bd5002c-9a07-4886-8757-883513a80ba3",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "name": "Sword Press (Bench)",
+      "sets": 4,
+      "reps": 8,
+      "rest_seconds": 90,
+      "weight_kg": 80,
+      "notes": "",
+      "order_index": 0
+    },
+    {
+      "id": "8b26f6e0-9c80-4069-9a0c-76c825949d4d",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "name": "Shield Raise (OHP)",
+      "sets": 3,
+      "reps": 10,
+      "rest_seconds": 75,
+      "weight_kg": 50,
+      "notes": "",
+      "order_index": 1
+    },
+    {
+      "id": "3c5e949a-cd5c-49ad-8237-c60ec2428b61",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "name": "Castle Row",
+      "sets": 3,
+      "reps": 12,
+      "rest_seconds": 60,
+      "weight_kg": 60,
+      "notes": "",
+      "order_index": 2
+    },
+    {
+      "id": "be3a887b-e37f-4696-923d-89ee86337502",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "name": "Dragon Squat",
+      "sets": 4,
+      "reps": 10,
+      "rest_seconds": 90,
+      "weight_kg": 100,
+      "notes": "",
+      "order_index": 3
+    },
+    {
+      "id": "84baf0e5-5eff-4e09-8935-71c3d834c454",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "name": "Siege Pull-up",
+      "sets": 3,
+      "reps": 8,
+      "rest_seconds": 60,
+      "weight_kg": 0,
+      "notes": "",
+      "order_index": 4
+    },
+    {
+      "id": "022dc95c-55e7-4331-b60a-5207f2133dcf",
+      "plan_id": "dcf9d497-d748-49b6-a5cf-39977d6d58e5",
+      "name": "aa",
+      "sets": 3,
+      "reps": 10,
+      "rest_seconds": 60,
+      "weight_kg": null,
+      "notes": "",
+      "order_index": 0
+    },
+    {
+      "id": "9a625d71-64eb-470d-a5f3-d23acfaecd00",
+      "plan_id": "e3711327-7ea8-42ec-ace5-f6557c04196e",
+      "name": "psus",
+      "sets": 3,
+      "reps": 10,
+      "rest_seconds": 60,
+      "weight_kg": 1,
+      "notes": "",
+      "order_index": 0
+    },
+    {
+      "id": "155e4465-e121-45e4-9396-416f35cb5988",
+      "plan_id": "56c9a5dd-be22-410e-a438-f40413f78316",
+      "name": "BENCH",
+      "sets": 1,
+      "reps": 10,
+      "rest_seconds": 60,
+      "weight_kg": 1,
+      "notes": "",
+      "order_index": 0
+    }
+  ],
+  
+  
+	
