@@ -11,6 +11,8 @@ const router = createRouter({
     { path: '/body',          name: 'body',       component: BodyView       },
     { path: '/analytics',     name: 'analytics',  component: AnalyticsView  },
     { path: '/profile',       name: 'profile',    component: ProfileView    },
+    // New Achievement route added here
+    { path: '/achievements',  name: 'achievements', component: AchievementsView },
     { path: '/:catchAll(.*)', redirect: '/dashboard'                         },
   ]
 });
@@ -18,7 +20,6 @@ const router = createRouter({
 const app = createApp({
   template: `
   <div>
-    <!-- Auth Screen -->
     <div v-if="!currentUser" class="auth-screen">
       <div class="auth-bg-anim"></div>
       <div class="auth-card">
@@ -78,7 +79,6 @@ const app = createApp({
       </div>
     </div>
 
-    <!-- Main App -->
     <div v-else class="app-layout">
       <aside :class="['sidebar', sidebarOpen?'open':'']" role="navigation">
         <div class="sidebar-logo">
@@ -111,7 +111,6 @@ const app = createApp({
           <button class="menu-toggle" @click="sidebarOpen=!sidebarOpen"><i class="fas fa-bars"></i></button>
           <div class="topbar-title">{{ currentNavLabel }}</div>
           <div class="topbar-date">{{ todayFormatted }}</div>
-          <!-- Theme toggle (light/dark) -->
           <button :class="['theme-toggle', isDark ? 'is-moon' : 'is-sun']" @click="toggleTheme" :title="isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'">
             <i :class="isDark ? 'fas fa-moon' : 'fas fa-sun'"></i>
           </button>
@@ -122,7 +121,6 @@ const app = createApp({
       </main>
     </div>
 
-    <!-- Logout Confirm Modal -->
     <div v-if="showLogoutConfirm" style="position:fixed;inset:0;background:rgba(0,0,0,0.65);z-index:9999;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);" @click.self="showLogoutConfirm=false">
       <div style="background:var(--color-bg-card);border:1px solid var(--color-border-strong);border-radius:18px;padding:36px 32px;max-width:360px;width:92vw;text-align:center;box-shadow:0 24px 64px rgba(0,0,0,0.45);animation:slideUp .25s ease;">
         <div style="font-size:42px;margin-bottom:14px;">👋</div>
@@ -169,6 +167,8 @@ const app = createApp({
       { name: 'body',      label: 'Body Tracking', icon: 'fas fa-weight'     },
       { name: 'analytics', label: 'Analytics',     icon: 'fas fa-chart-line' },
       { name: 'profile',   label: 'Profile',       icon: 'fas fa-user-cog'   },
+      // New Achievement menu item
+      { name: 'achievements', label: 'Achievements', icon: 'fas fa-trophy'   },
     ];
 
     const userInitials = computed(() => {
@@ -269,5 +269,8 @@ app.component('workout-view',   WorkoutView);
 app.component('body-view',      BodyView);
 app.component('analytics-view', AnalyticsView);
 app.component('profile-view',   ProfileView);
+// New Achievement component registration
+app.component('achievements-view', AchievementsView);
+
 app.use(router);
 app.mount('#app');

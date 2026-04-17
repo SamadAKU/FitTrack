@@ -15,6 +15,20 @@
       "created_at": "2026-04-14T20:37:58.504Z"
     },
     {
+      "id": "max-achiever-999",
+      "username": "max",
+      "email": "max@fittrack.com",
+      "password": "$2a$10$HSH0kA8XaAPsZX9ziajBKOtMOx4.Quplxqq941pYBCXlX1i7fvzcS",
+      "display_name": "Max (The Boss)",
+      "height_cm": 180,
+      "goal_calories": 2500,
+      "goal_protein": 180,
+      "goal_carbs": 300,
+      "goal_fat": 80,
+      "goal_water_ml": 3000,
+      "created_at": "2026-04-01T10:00:00.000Z"
+    },
+    {
       "id": "8110bd75-3a2b-4fe9-ad30-15cb57baad51",
       "username": "test",
       "email": "test@test.com",
@@ -30,6 +44,97 @@
     }
   ],
   "food_logs": [
+    {
+      "id": "food-m-1",
+      "user_id": "max-achiever-999",
+      "food_name": "Test Feast",
+      "calories": 2000,
+      "protein_g": 150,
+      "carbs_g": 200,
+      "fat_g": 60,
+      "serving_size": "1 serving",
+      "meal_type": "lunch",
+      "logged_at": "2026-04-10",
+      "created_at": "2026-04-10T12:00:00.000Z"
+    },
+    {
+      "id": "food-m-2",
+      "user_id": "max-achiever-999",
+      "food_name": "Test Feast",
+      "calories": 2000,
+      "protein_g": 150,
+      "carbs_g": 200,
+      "fat_g": 60,
+      "serving_size": "1 serving",
+      "meal_type": "lunch",
+      "logged_at": "2026-04-11",
+      "created_at": "2026-04-11T12:00:00.000Z"
+    },
+    {
+      "id": "food-m-3",
+      "user_id": "max-achiever-999",
+      "food_name": "Test Feast",
+      "calories": 2000,
+      "protein_g": 150,
+      "carbs_g": 200,
+      "fat_g": 60,
+      "serving_size": "1 serving",
+      "meal_type": "lunch",
+      "logged_at": "2026-04-12",
+      "created_at": "2026-04-12T12:00:00.000Z"
+    },
+    {
+      "id": "food-m-4",
+      "user_id": "max-achiever-999",
+      "food_name": "Test Feast",
+      "calories": 2000,
+      "protein_g": 150,
+      "carbs_g": 200,
+      "fat_g": 60,
+      "serving_size": "1 serving",
+      "meal_type": "lunch",
+      "logged_at": "2026-04-13",
+      "created_at": "2026-04-13T12:00:00.000Z"
+    },
+    {
+      "id": "food-m-5",
+      "user_id": "max-achiever-999",
+      "food_name": "Test Feast",
+      "calories": 2000,
+      "protein_g": 150,
+      "carbs_g": 200,
+      "fat_g": 60,
+      "serving_size": "1 serving",
+      "meal_type": "lunch",
+      "logged_at": "2026-04-14",
+      "created_at": "2026-04-14T12:00:00.000Z"
+    },
+    {
+      "id": "food-m-6",
+      "user_id": "max-achiever-999",
+      "food_name": "Test Feast",
+      "calories": 2000,
+      "protein_g": 150,
+      "carbs_g": 200,
+      "fat_g": 60,
+      "serving_size": "1 serving",
+      "meal_type": "lunch",
+      "logged_at": "2026-04-15",
+      "created_at": "2026-04-15T12:00:00.000Z"
+    },
+    {
+      "id": "food-m-7",
+      "user_id": "max-achiever-999",
+      "food_name": "Test Feast",
+      "calories": 2000,
+      "protein_g": 150,
+      "carbs_g": 200,
+      "fat_g": 60,
+      "serving_size": "1 serving",
+      "meal_type": "lunch",
+      "logged_at": "2026-04-16",
+      "created_at": "2026-04-16T12:00:00.000Z"
+    },
     {
       "id": "08dbb30a-e487-4391-93f7-a0bbe16643a5",
       "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
@@ -410,6 +515,13 @@
   ],
   "water_logs": [
     {
+      "id": "water-m-1",
+      "user_id": "max-achiever-999",
+      "amount_ml": 25000,
+      "logged_at": "2026-04-16",
+      "created_at": "2026-04-16T15:00:00.000Z"
+    },
+    {
       "id": "5cb52d67-e881-44ab-a246-d3200c51e18d",
       "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
       "amount_ml": 2289,
@@ -518,6 +630,33 @@
     }
   ],
   "workout_plans": [
+    {
+      "id": "sesh-m-1",
+      "user_id": "max-achiever-999",
+      "plan_id": "plan-a",
+      "plan_name": "Alpha",
+      "duration_seconds": 65000,
+      "notes": "Test block",
+      "completed_at": "2026-04-14T10:00:00.000Z"
+    },
+    {
+      "id": "sesh-m-2",
+      "user_id": "max-achiever-999",
+      "plan_id": "plan-b",
+      "plan_name": "Beta",
+      "duration_seconds": 65000,
+      "notes": "Test block",
+      "completed_at": "2026-04-15T10:00:00.000Z"
+    },
+    {
+      "id": "sesh-m-3",
+      "user_id": "max-achiever-999",
+      "plan_id": "plan-c",
+      "plan_name": "Gamma",
+      "duration_seconds": 65000,
+      "notes": "Test block",
+      "completed_at": "2026-04-16T10:00:00.000Z"
+    },
     {
       "id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
       "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",

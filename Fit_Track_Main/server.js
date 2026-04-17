@@ -33,6 +33,20 @@ app.use('/api/workouts', workoutRoutes);
 app.use('/api/body', bodyRoutes);
 app.use('/api/analytics', analyticsRoutes);
 
+app.get('/api/achievements/data', (req, res) => {
+  try {
+    const db = require('./database');
+    res.json({
+      users: db.get('users').value() || [],
+      food_logs: db.get('food_logs').value() || [],
+      water_logs: db.get('water_logs').value() || [],
+      workout_sessions: db.get('workout_sessions').value() || []
+    });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to load achievements data" });
+  }
+});
+
 // Serve main app for all non-API routes (SPA)
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
