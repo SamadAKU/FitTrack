@@ -1,4 +1,4 @@
-Arshia Shahbazpourtazehkand:
+Arshia Shahbazpourtazehkand 100832558
 --------------------------------------
 - Built the backend server and database layer (server.js, database.js) including session handling, JSON-based storage schema, and route registration.
 - Implemented the authentication system (routes/auth.js) covering registration, login, logout, and profile update with bcrypt password hashing.
@@ -6,7 +6,7 @@ Arshia Shahbazpourtazehkand:
 - Built the workout frontend component (components/workout.js) including the active workout mode overlay, set/rest timer, feel rating UI, progress tracking, and session saving.
 - Wrote the API service layer (api.js) connecting all frontend components to the backend via fetch.
 
-Samad Khan:
+Samad Khan 100754092
 ---------------------
 - Built the nutrition backend and frontend (routes/nutrition.js, components/nutrition.js) covering food logging, macro tracking, water logging, date navigation, food name autofill, and the macro donut SVG chart.
 - Developed the analytics backend (routes/analytics.js) and frontend (components/analytics.js) including the calorie bar chart, stacked macro chart, weight trend line, and workout frequency chart using D3.js.
@@ -14,32 +14,30 @@ Samad Khan:
 - Implemented the dashboard (components/dashboard.js) aggregating today's macros, water intake, last recorded weight, and weekly workout count.
 - Built the profile component (components/profile.js), the app shell (app.js) including routing and theme switching, and wrote the full CSS design system (style.css).
 
-Lillian Weir:
----------------------
-[Contributions:
-
-Added "To-Do" section and "Goals" section
-Added minor color additions to support the new sections
-Added minor additions to seed data into the new sections
-]
-
-Wei Cui:
----------------------
-[I contributed mainly through testing, security review, feature improvement, and documentation.
-
+Wei Cui 100342032
+------------------
 - Tested registration and login using both the demo account and a separate test account.
 - Added clearer README instructions, including how to run the app, how to log in, how to use workouts/nutrition/water/body tracking, and notes about entry restrictions.
 - Tested the app against unsafe input and permission issues, including SQL-style input, HTML/script-style input, invalid numeric values, and cross-account ID-based deletion attempts.
-- Discovered a broken access control issue in the workout plan delete route, where another user could target a different user’s workout plan ID and affect related exercise data.
+- Discovered a broken access control issue in the workout plan delete route, where another user could target a different user's workout plan ID and affect related exercise data.
 - Fixed vulnerabilities in workouts.js, nutrition.js, and body.js by improving ownership checks, delete handling, and validation.
 - Added a custom per-exercise workout timer feature in both frontend and backend, replacing the previous fixed 45-second active timer while keeping backward compatibility for older plans.
-- Retested the app after changes to confirm that normal app functions still work and unauthorized delete attempts are now blocked.]
+- Retested the app after changes to confirm that normal app functions still work and unauthorized delete attempts are now blocked.
 
-Henry Peng
+Lillian Weir 100779098
+-----------------------
+- Built the todo backend and frontend (routes/todo.js, components/todo.js), where tasks can be added with a title, priority, category tag, due date
+- Added functionality to todo to allow repeating tasks, creating new tasks once the originals have been completed
+- Built the goals backend and frontend (routes/goals.js, components/goals.js), where goals can be added with a title, target date, description, and notes
+- Added functionality to goals to allow types - either fitness/custom or a weight
+- Added functionality to goals weight types to check current weight and display the distance from the goal and if it has been achieved
+- Added minor color additions to support the new sections
+- Added minor additions to seed data into the new sections
+
+Henry Peng 100709985
 ---------------------
 - Built the achievements and leaderboard frontend with dynamic badge unlocking and community rankings.
 - Implemented a dedicated backend route in server.js to fetch full-database metrics for the gamification system.
 - Integrated the new module into the Vue app shell, updating the router and sidebar navigation.
 - Styled the interactive badge UI, adding animations and fully supporting the dark/light mode theme.
 - Created a normalized mock dataset to validate complex macro tracking, streaks, and leaderboard accuracy.
-
