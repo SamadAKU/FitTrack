@@ -11,6 +11,8 @@ const router = createRouter({
     { path: '/body',          name: 'body',       component: BodyView       },
     { path: '/analytics',     name: 'analytics',  component: AnalyticsView  },
     { path: '/profile',       name: 'profile',    component: ProfileView    },
+    { path: '/todos',         name: 'todos',      component: TodoView       },
+    { path: '/goals',         name: 'goals',      component: GoalsView      },
     { path: '/:catchAll(.*)', redirect: '/dashboard'                         },
   ]
 });
@@ -169,6 +171,8 @@ const app = createApp({
       { name: 'body',      label: 'Body Tracking', icon: 'fas fa-weight'     },
       { name: 'analytics', label: 'Analytics',     icon: 'fas fa-chart-line' },
       { name: 'profile',   label: 'Profile',       icon: 'fas fa-user-cog'   },
+      { name: 'todos',     label: 'To-Do',         icon: 'fas fa-check-square' },
+      { name: 'goals',     label: 'Goals',         icon: 'fas fa-bullseye'     },
     ];
 
     const userInitials = computed(() => {
@@ -269,5 +273,7 @@ app.component('workout-view',   WorkoutView);
 app.component('body-view',      BodyView);
 app.component('analytics-view', AnalyticsView);
 app.component('profile-view',   ProfileView);
+app.component('todo-view',      TodoView);
+app.component('goals-view',     GoalsView);
 app.use(router);
 app.mount('#app');

@@ -1,0 +1,11 @@
+
+Wei Cui:
+[I contributed mainly through testing, security review, feature improvement, and documentation.
+
+- Tested registration and login using both the demo account and a separate test account.
+- Added clearer README instructions, including how to run the app, how to log in, how to use workouts/nutrition/water/body tracking, and notes about entry restrictions.
+- Tested the app against unsafe input and permission issues, including SQL-style input, HTML/script-style input, invalid numeric values, and cross-account ID-based deletion attempts.
+- Discovered a broken access control issue in the workout plan delete route, where another user could target a different user’s workout plan ID and affect related exercise data.
+- Fixed vulnerabilities in workouts.js, nutrition.js, and body.js by improving ownership checks, delete handling, and validation.
+- Added a custom per-exercise workout timer feature in both frontend and backend, replacing the previous fixed 45-second active timer while keeping backward compatibility for older plans.
+- Retested the app after changes to confirm that normal app functions still work and unauthorized delete attempts are now blocked.]

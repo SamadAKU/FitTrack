@@ -25,7 +25,11 @@
   --color-accent-orange: #ff8c42; /* calories */
   --color-accent-orange-tint: rgba(255, 140, 66, 0.15);
   --color-accent-red: #ff6b6b; /* fat, danger */
+  --color-accent-red-tint: rgba(255, 107, 107, 0.15); /* to-do list priority high */
   --color-accent-yellow: #ffd166; /* carbs, warnings */
+  --color-accent-yellow-tint: rgba(255, 209, 102, 0.15);  /* to-do list priority medium */
+  --color-accent-gray: #9ca3af; /* goals abandoned */
+  --color-accent-gray-tint: rgba(156, 163, 175, 0.15); /* goals abandoned */
   --color-accent-cyan: #38bdf8; /* water */
 
   /* Text — ordered by visual weight / contrast level */
@@ -65,7 +69,14 @@
   --color-accent-orange-tint: rgba(217, 95, 0, 0.12);
 
   --color-accent-red: #d42e2e;
+  --color-accent-red-tint: rgba(212, 46, 46, 0.12);
+  
   --color-accent-yellow: #b07800;
+  --color-accent-yellow-tint: rgba(176, 120, 0, 0.12);
+
+  --color-accent-gray: #6b7280;
+  --color-accent-gray-tint: rgba(107, 114, 128, 0.12);
+
   --color-accent-cyan: #0080bb;
 
   /* Text — all meet WCAG AA on light card backgrounds */
@@ -1069,6 +1080,30 @@ input[list] {
 }
 [data-theme="light"] .tag-pill.blue {
   border-color: rgba(30, 79, 199, 0.2);
+}
+.tag-pill.yellow {
+  background: var(--color-accent-yellow-tint);
+  color: var(--color-accent-yellow);
+  border: 1px solid rgba(255, 209, 102, 0.3);
+}
+[data-theme="light"] .tag-pill.yellow {
+  border-color: rgba(176, 120, 0, 0.3);
+}
+.tag-pill.red {
+  background: var(--color-accent-red-tint);
+  color: var(--color-accent-red);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+}
+[data-theme="light"] .tag-pill.red {
+  border-color: rgba(212, 46, 46, 0.3);
+}
+.tag-pill.gray {
+  background: var(--color-accent-gray-tint);
+  color: var(--color-accent-gray);
+  border: 1px solid rgba(156, 163, 175, 0.3);
+}
+[data-theme="light"] .tag-pill.gray {
+  border-color: rgba(107, 114, 128, 0.3);
 }
 .empty-state {
   text-align: center;

@@ -21,17 +21,21 @@ app.use(session({
 }));
 
 // Routes
-const authRoutes = require('./routes/auth');
+const authRoutes      = require('./routes/auth');
 const nutritionRoutes = require('./routes/nutrition');
-const workoutRoutes = require('./routes/workouts');
-const bodyRoutes = require('./routes/body');
+const workoutRoutes   = require('./routes/workouts');
+const bodyRoutes      = require('./routes/body');
 const analyticsRoutes = require('./routes/analytics');
+const todoRoutes      = require('./routes/todos');
+const goalsRoutes     = require('./routes/goals');
 
-app.use('/api/auth', authRoutes);
+app.use('/api/auth',      authRoutes);
 app.use('/api/nutrition', nutritionRoutes);
-app.use('/api/workouts', workoutRoutes);
-app.use('/api/body', bodyRoutes);
+app.use('/api/workouts',  workoutRoutes);
+app.use('/api/body',      bodyRoutes);
 app.use('/api/analytics', analyticsRoutes);
+app.use('/api/todos',     todoRoutes);
+app.use('/api/goals',     goalsRoutes);
 
 // Serve main app for all non-API routes (SPA)
 app.get('*', (req, res) => {

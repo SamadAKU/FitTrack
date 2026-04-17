@@ -17,7 +17,9 @@ db.defaults({
   workout_plans: [],
   exercises: [],
   workout_sessions: [],
-  session_sets: []
+  session_sets: [],
+  todos: [],
+  goals: []
 }).write();
 
 // Seed demo user if not present
@@ -110,6 +112,50 @@ if (!db.get('users').find({ email: 'demo@fittrack.com' }).value()) {
       notes: '', completed_at: date.toISOString()
     }).write();
   }
+
+  // Seed todos
+  const sampleTodos = [
+    { title: 'Log meals every day this week', priority: 'high',   category: 'Nutrition', due_date: null,          recurrence: 'weekly' },
+    { title: 'Buy protein powder',            priority: 'medium', category: 'Shopping',  due_date: null,          recurrence: 'none'   },
+    { title: 'Book physio appointment',       priority: 'low',    category: 'Health',    due_date: null,          recurrence: 'none'   },
+    { title: 'Morning stretching routine',    priority: 'medium', category: 'Fitness',   due_date: null,          recurrence: 'daily'  },
+  ];
+  sampleTodos.forEach(t => {
+    db.get('todos').push({
+      id: uuidv4(), user_id: uid,
+      title: t.title, completed: false,
+      priority: t.priority, category: t.category,
+      due_date: t.due_date, recurrence: t.recurrence,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    }).write();
+  });
+
+  // Seed goals
+  const targetDate = new Date();
+  targetDate.setMonth(targetDate.getMonth() + 3);
+  const targetDateStr = targetDate.toISOString().split('T')[0];
+
+  db.get('goals').push({
+    id: uuidv4(), user_id: uid,
+    type: 'weight', title: 'Reach 75kg',
+    status: 'active', target_weight_kg: 75,
+    description: null, target_date: targetDateStr,
+    notes: 'Slow and steady', completed_at: null,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString()
+  }).write();
+
+  db.get('goals').push({
+    id: uuidv4(), user_id: uid,
+    type: 'fitness', title: 'Run a 5K',
+    status: 'active', target_weight_kg: null,
+    description: 'Complete a 5K run without stopping',
+    target_date: targetDateStr,
+    notes: '', completed_at: null,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString()
+  }).write();
 }
 
 module.exports = db;

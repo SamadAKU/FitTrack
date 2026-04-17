@@ -43,6 +43,19 @@ const API = {
   getNutritionWeek:   () => API.get('/api/analytics/nutrition-week'),
   getWeightTrend:     () => API.get('/api/analytics/weight-trend'),
   getWorkoutFrequency:() => API.get('/api/analytics/workout-frequency'),
+
+  // Todos
+  getTodos:       (params = '') => API.get(`/api/todos${params}`),
+  createTodo:     d             => API.post('/api/todos', d),
+  updateTodo:     (id, d)       => API._req('PATCH', `/api/todos/${id}`, d),
+  deleteTodo:     id            => API.delete(`/api/todos/${id}`),
+  getCategories:  ()            => API.get('/api/todos/categories'),
+
+  // Goals
+  getGoals:       (params = '') => API.get(`/api/goals${params}`),
+  createGoal:     d             => API.post('/api/goals', d),
+  updateGoal:     (id, d)       => API._req('PATCH', `/api/goals/${id}`, d),
+  deleteGoal:     id            => API.delete(`/api/goals/${id}`),
 };
 
 // jQuery-powered toast herald announcement

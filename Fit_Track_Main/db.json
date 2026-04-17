@@ -1059,6 +1059,15 @@
       "duration_seconds": 83,
       "notes": "",
       "completed_at": "2026-04-17T17:01:15.106Z"
+    },
+    {
+      "id": "c15745dc-9ed3-4b89-99ba-97dcb179b3ca",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "plan_id": "98b206c1-3b7f-4a40-a7d4-afd446312fc0",
+      "plan_name": "Knight's Training",
+      "duration_seconds": 2,
+      "notes": "",
+      "completed_at": "2026-04-17T19:02:39.499Z"
     }
   ],
   "session_sets": [
@@ -1301,6 +1310,164 @@
       "reps_completed": 45,
       "weight_kg": 70,
       "feel_rating": 5
+    }
+  ],
+  "todos": [
+    {
+      "id": "4fcdda7a-d250-4a96-9243-a382f43b03c2",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "title": "Low Priority Task, No Repeat",
+      "completed": false,
+      "priority": "low",
+      "category": "Example",
+      "due_date": null,
+      "recurrence": "none",
+      "created_at": "2026-04-17T19:31:37.860Z",
+      "updated_at": "2026-04-17T19:31:37.860Z"
+    },
+    {
+      "id": "b6823e1c-dd05-42ed-844f-caf61e981bc9",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "title": "Medium Priority Task, Daily Repeat",
+      "completed": true,
+      "priority": "medium",
+      "category": "Do this Daily",
+      "due_date": "2026-04-17",
+      "recurrence": "daily",
+      "created_at": "2026-04-17T19:32:11.452Z",
+      "updated_at": "2026-04-17T19:32:15.621Z"
+    },
+    {
+      "id": "38feb011-8712-4b31-8401-0e9afa3c78b5",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "title": "Medium Priority Task, Daily Repeat",
+      "completed": false,
+      "priority": "medium",
+      "category": "Do this Daily",
+      "due_date": "2026-04-18",
+      "recurrence": "daily",
+      "created_at": "2026-04-17T19:32:15.621Z",
+      "updated_at": "2026-04-17T19:32:15.621Z"
+    },
+    {
+      "id": "dbfab635-ee43-4290-9581-8fa90ffecaf1",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "title": "High Priority Task, Weekly Repeat",
+      "completed": true,
+      "priority": "high",
+      "category": "Do this Weekly",
+      "due_date": "2026-04-18",
+      "recurrence": "weekly",
+      "created_at": "2026-04-17T19:32:44.333Z",
+      "updated_at": "2026-04-17T19:32:47.550Z"
+    },
+    {
+      "id": "4c8b97f3-f0b0-4432-bd18-d2d9d1d4ef8f",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "title": "High Priority Task, Weekly Repeat",
+      "completed": true,
+      "priority": "high",
+      "category": "Do this Weekly",
+      "due_date": "2026-04-25",
+      "recurrence": "weekly",
+      "created_at": "2026-04-17T19:32:47.550Z",
+      "updated_at": "2026-04-17T19:32:48.915Z"
+    },
+    {
+      "id": "ea1fdabb-61e3-43b1-b7a1-04700c642ea3",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "title": "High Priority Task, Weekly Repeat",
+      "completed": false,
+      "priority": "high",
+      "category": "Do this Weekly",
+      "due_date": "2026-05-02",
+      "recurrence": "weekly",
+      "created_at": "2026-04-17T19:32:48.915Z",
+      "updated_at": "2026-04-17T19:32:48.915Z"
+    }
+  ],
+  "goals": [
+    {
+      "id": "552579dc-c20b-479c-8105-28c3d04dd172",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "type": "weight",
+      "title": "Reach 300kg",
+      "status": "active",
+      "target_date": null,
+      "notes": "Bulking sesh",
+      "created_at": "2026-04-17T19:33:37.146Z",
+      "updated_at": "2026-04-17T19:33:37.146Z",
+      "target_weight_kg": 300,
+      "description": null,
+      "current_weight_kg": 77.5
+    },
+    {
+      "id": "5d7ef5be-46c8-4ef2-9ee6-199558729bcd",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "type": "weight",
+      "title": "Reach 77.5kg",
+      "status": "active",
+      "target_date": "2026-04-20",
+      "notes": "Current Weight",
+      "created_at": "2026-04-17T19:34:24.370Z",
+      "updated_at": "2026-04-17T19:34:24.370Z",
+      "target_weight_kg": 77.5,
+      "description": null,
+      "current_weight_kg": 77.5
+    },
+    {
+      "id": "22e71d17-2bb3-4034-bd00-8ce58a642663",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "type": "weight",
+      "title": "Reach 10kg",
+      "status": "active",
+      "target_date": null,
+      "notes": "Lose a few limbs",
+      "created_at": "2026-04-17T19:34:55.861Z",
+      "updated_at": "2026-04-17T19:34:55.861Z",
+      "target_weight_kg": 10,
+      "description": null,
+      "current_weight_kg": 77.5
+    },
+    {
+      "id": "c56e5a17-04bb-46a9-bdf0-2c30e23fcae6",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "type": "fitness",
+      "title": "Do a backflip",
+      "status": "active",
+      "target_date": "2034-05-11",
+      "notes": "Should be easy!",
+      "created_at": "2026-04-17T19:35:51.733Z",
+      "updated_at": "2026-04-17T19:35:51.733Z",
+      "description": "Do an awesome crazy backflip",
+      "target_weight_kg": null
+    },
+    {
+      "id": "c563ce6e-b81f-4877-90c1-8ef200a54b5e",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "type": "fitness",
+      "title": "Completed goal!",
+      "status": "completed",
+      "target_date": "2026-04-17",
+      "notes": "This should appear in completed!",
+      "created_at": "2026-04-17T19:36:22.179Z",
+      "updated_at": "2026-04-17T19:36:25.229Z",
+      "description": "Hit the complete button!",
+      "target_weight_kg": null,
+      "completed_at": "2026-04-17T19:36:25.229Z"
+    },
+    {
+      "id": "6509528e-d8e0-41c4-9048-242cf1da21c5",
+      "user_id": "47329973-96af-4578-9fc5-ba4ca58ebd0b",
+      "type": "fitness",
+      "title": "Abandoned goal...",
+      "status": "abandoned",
+      "target_date": "2026-04-15",
+      "notes": "This should appear in abandoned...",
+      "created_at": "2026-04-17T19:36:52.155Z",
+      "updated_at": "2026-04-17T19:37:01.174Z",
+      "description": "Hit the abandon button...",
+      "target_weight_kg": null
     }
   ]
 }
